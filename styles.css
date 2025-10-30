@@ -735,3 +735,81 @@ footer {
 #experience {
   margin-top: 1.5rem;
 }
+
+/* LIGHTBOX FIXED CENTER */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+/* Inner container */
+.lb-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 95vw;
+  max-height: 90vh;
+  flex-direction: column;
+}
+
+/* Video or Image inside */
+.lightbox video,
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Buttons (close + rotate) */
+.lb-close,
+.lb-rotate {
+  position: absolute;
+  top: -50px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border: none;
+  font-size: 1.3rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background 0.2s ease;
+}
+
+.lb-close:hover,
+.lb-rotate:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Button positions — now relative to video box */
+.lb-close {
+  right: 10px;
+}
+
+.lb-rotate {
+  right: 55px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .lb-close,
+  .lb-rotate {
+    top: -45px;
+    font-size: 1.1rem;
+  }
+}
