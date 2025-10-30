@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lyse and Bind Films — Cinematic Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Lyse and Bind Films — Video Editor & Photo Editor. Cinematic visuals, storytelling, and emotional precision."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="grain"></div>
+
+    <div class="wrap">
+      <!-- NAVBAR -->
+      <header>
+        <div class="nav">
+          <div class="brand">
+            <img src="./media/logo.jpg" alt="Logo" class="logo" />
+            <div>
+              <h1>Lyse and Bind Films</h1>
+              <p>Precision Editing. Cinematic Impact.</p>
+            </div>
+          </div>
+
+          <nav aria-label="main">
+            <ul>
+              <li><a href="#works">Works</a></li>
+              <!-- <li><a href="#instagram">Instagram</a></li> -->
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero" id="showreel">
+        <video
+          src="./media/heroSectionVideo.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+        <div class="heroInner">
+          <div class="heroText">
+            <!-- <small
+              >Hyderabad, India · +91-8074209759 ·
+              <a href="mailto:kbharath4937@email.com"
+                >kbharath4937@email.com</a
+              ></small
+            > -->
+            <h2>Lyse and Bind Films</h2>
+            <p>
+              Creative Video Editor & Photo Editor. 4+ years creating cinematic
+              wedding films, pre-wedding and social reels. Strong in
+              storytelling, color grading and fast post-production workflows.
+            </p>
+
+            <div class="heroBtns">
+              <button
+                class="btn primary"
+                onclick="openLightbox({type:'video',src:'./media/bacheloritecinematicteaser.mp4'})"
+              >
+                ▶ Watch Bachelorette Cinematic Teaser
+              </button>
+              <a class="btn" href="./media/bharathresume.pdf" download
+                >Download Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SELECTED WORKS -->
+      <section id="works" class="works">
+        <div class="sectionHeader">
+          <h3>Selected Works</h3>
+        </div>
+
+        <div class="worksGrid">
+          <div
+            class="work"
+            onclick="openLightbox({type:'video',src:'./media/bacheloritecinematicteaser.mp4'})"
+          >
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              src="./media/bacheloritecinematicteaser.mp4"
+            ></video>
+            <div class="workMeta">Bachelorette Cinematic Teaser</div>
+          </div>
+
+          <div
+            class="work"
+            onclick="openLightbox({type:'image',src:'./media/haldhifunctionimage.webp'})"
+          >
+            <img src="./media/haldhifunctionimage.webp" alt="Haldi Function" />
+            <div class="workMeta">Haldi Function</div>
+          </div>
+
+          <div
+            class="work"
+            onclick="openLightbox({type:'image',src:'./media/haldhifunctionimage2.webp'})"
+          >
+            <img
+              src="./media/haldhifunctionimage2.webp"
+              alt="Haldi Function 2"
+            />
+            <div class="workMeta">Haldi Portrait</div>
+          </div>
+
+          <div
+            class="work"
+            onclick="openLightbox({type:'image',src:'./media/pellikuthuruimagebackinstagramimage.webp'})"
+          >
+            <img
+              src="./media/pellikuthuruimagebackinstagramimage.webp"
+              alt="Pellikuthuru Shoot"
+            />
+            <div class="workMeta">Pellikuthuru Shoot</div>
+          </div>
+
+          <div
+            class="work"
+            onclick="openLightbox({type:'video',src:'./media/preweddinginstagramvideo.mp4'})"
+          >
+            <video
+              muted
+              preload="metadata"
+              src="./media/preweddinginstagramvideo.mp4"
+            ></video>
+            <div class="workMeta">Pre-Wedding Reel</div>
+          </div>
+
+          <div
+            class="work"
+            onclick="openLightbox({type:'image',src:'./media/silhouetteimage.webp'})"
+          >
+            <img src="./media/silhouetteimage.webp" alt="Silhouette" />
+            <div class="workMeta">Silhouette Mood Shot</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INSTAGRAM SECTION
+      <section id="instagram" class="instagram-section">
+        <div class="sectionCard">
+          <h3 class="sectionTitle">Instagram Highlights</h3>
+          <p class="lead muted">
+            A glimpse of my latest photography and cinematic reels.
+          </p>
+
+          <div class="insta-grid">
+            <div class="insta-item square">
+              <img
+                src="./media/haldhifunctionimage.webp"
+                alt="Haldi Function"
+              />
+            </div>
+
+            <div class="insta-item square">
+              <img
+                src="./media/pellikuthuruimagebackinstagramimage.webp"
+                alt="Pellikuthuru"
+              />
+            </div>
+
+            <div class="insta-item reel">
+              <video
+                src="./media/preweddinginstagramvideo.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+
+            <div class="insta-item reel">
+              <video
+                src="./media/bacheloritecinematicteaser.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+
+            <div class="insta-item square">
+              <img src="./media/silhouetteimage.webp" alt="Silhouette" />
+            </div>
+
+            <div class="insta-item reel">
+              <video
+                src="./media/heroSectionVideo.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+          </div>
+
+          <div class="insta-btn">
+            <a
+              href="https://www.instagram.com/lyse_n_bind_films"
+              target="_blank"
+              class="btn primary"
+              >📸 View on Instagram</a
+            >
+          </div>
+        </div>
+      </section> -->
+
+      <!-- EXPERIENCE -->
+      <section id="experience">
+        <div class="sectionHeader">
+          <h3>Experience</h3>
+        </div>
+        <div class="card">
+          <div class="timeline">
+            <div class="titem">
+              <div class="tdate">2020 — Present</div>
+              <div class="tbody">
+                <h4>Freelance Video Editor — Self-employed (Hyderabad)</h4>
+                <p class="muted">
+                  Edited 300+ wedding and event projects, cinematic highlights,
+                  full-length wedding films and social reels. Managed complete
+                  post-production workflows and client deliveries.
+                </p>
+              </div>
+            </div>
+
+            <div class="titem">
+              <div class="tdate">2019 — 2020</div>
+              <div class="tbody">
+                <h4>Assistant Video Editor — Capture Life Studio</h4>
+                <p class="muted">
+                  Assisted senior editors, learned advanced grading techniques,
+                  and handled project exports, sound sync and final delivery.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT + SKILLS -->
+      <section id="about" class="twoCol">
+        <div class="card about">
+          <h3>About</h3>
+          <p>
+            I’m a creative and detail-oriented Video Editor with 4+ years of
+            experience crafting cinematic wedding films, pre-wedding stories,
+            and social reels. My focus lies in storytelling, rhythm, and
+            delivering emotionally resonant edits with precision.
+          </p>
+
+          <h4 style="margin-top: 12px">Core Skills</h4>
+          <div class="skillsGrid">
+            <div class="skill">
+              <strong>Premiere Pro</strong><small>Editing</small>
+            </div>
+            <div class="skill">
+              <strong>After Effects</strong><small>Motion Design</small>
+            </div>
+            <div class="skill">
+              <strong>Photoshop</strong><small>Retouching</small>
+            </div>
+            <div class="skill">
+              <strong>Lightroom</strong><small>Color Grading</small>
+            </div>
+            <div class="skill">
+              <strong>Audio Sync</strong><small>Sound Design</small>
+            </div>
+            <div class="skill">
+              <strong>Workflow</strong><small>4K, ProRes</small>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h3>Quick Facts</h3>
+          <p class="muted">
+            • Edited 300+ wedding & event projects<br />
+            • 98% client satisfaction<br />
+            • Fast and organized delivery pipelines
+          </p>
+
+          <h4 style="margin-top: 12px">Education</h4>
+          <p class="muted">
+            B.Sc. Computer Applications — Osmania University (2019–2022)
+          </p>
+
+          <h4 style="margin-top: 12px">Tools</h4>
+          <p class="muted">
+            Premiere, After Effects, Photoshop, Lightroom, DaVinci Resolve
+          </p>
+        </aside>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="card">
+          <h3>Contact</h3>
+          <p class="muted">
+            Available for full-time or freelance projects. Reach out or download
+            my resume.
+          </p>
+
+          <div class="contactRow">
+            <a class="download" href="./media/bharathresume.pdf" download
+              >⬇ Resume</a
+            >
+            <div>
+              <strong>Email:</strong>
+              <a href="mailto:kbharath4937@email.com">kbharath4937@email.com</a>
+            </div>
+            <div>
+              <strong>Phone:</strong>
+              <a href="tel:+918074209759">+91-8074209759</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        © <span id="year"></span> Lyse and Bind Films — Video Editor & Photo
+        Editor
+      </footer>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+      <div class="lb-panel" onclick="event.stopPropagation()">
+        <button class="lb-close" onclick="closeLightbox()">✕</button>
+        <div id="lightboxContent"></div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      function openLightbox(opts) {
+        const box = document.getElementById("lightbox");
+        const content = document.getElementById("lightboxContent");
+        content.innerHTML = "";
+        if (opts.type === "video") {
+          const v = document.createElement("video");
+          v.src = opts.src;
+          v.controls = true;
+          v.autoplay = true;
+          v.playsInline = true;
+          v.style.maxWidth = "100%";
+          v.style.maxHeight = "80vh";
+          content.appendChild(v);
+        } else {
+          const i = document.createElement("img");
+          i.src = opts.src;
+          i.style.maxWidth = "100%";
+          i.style.maxHeight = "80vh";
+          content.appendChild(i);
+        }
+        box.classList.add("open");
+      }
+
+      function closeLightbox() {
+        const box = document.getElementById("lightbox");
+        box.classList.remove("open");
+        document.getElementById("lightboxContent").innerHTML = "";
+      }
+
+      // Hover video preview
+      document.querySelectorAll(".work video").forEach((v) => {
+        v.addEventListener("mouseenter", () => {
+          v.currentTime = 0;
+          v.play();
+        });
+        v.addEventListener("mouseleave", () => {
+          v.pause();
+          v.currentTime = 0;
+        });
+      });
+
+      // Adjust hero height to nav
+      function adjustHeroHeight() {
+        const nav = document.querySelector(".nav");
+        const hero = document.querySelector(".hero");
+        if (nav && hero) {
+          hero.style.height = `calc(100vh - ${nav.offsetHeight}px)`;
+        }
+      }
+      window.addEventListener("load", adjustHeroHeight);
+      window.addEventListener("resize", adjustHeroHeight);
+    </script>
+  </body>
+</html>
